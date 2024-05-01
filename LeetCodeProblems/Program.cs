@@ -7,40 +7,13 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            ListNode l12 = new ListNode()
-            {
-                val = 9,
-                next = null,
-            };
-            ListNode l11 = new ListNode()
-            {
-                val = 9,
-                next = l12
-            };
-            ListNode l10 = new ListNode()
-            {
-                val = 5,
-                next = null,
-            };
+            int[] nums1 = { 1, 2, 3, 0, 0, 0 };
+            int[] nums2 = { 2, 5, 6 };
+            int m = 3;
+            int n = 3;
 
-            ListNode l22 = new ListNode()
-            {
-                val = 4,
-                next = null,
-            };
-            ListNode l21 = new ListNode()
-            {
-                val = 9,
-                next = null
-            };
-            ListNode l20 = new ListNode()
-            {
-                val = 5,
-                next = null,
-            };
-
-            ListNode result = AddTwoNumbers.SolveProblem(l10, l20);
-            Console.WriteLine($"[{string.Join(", ", result.val)}]");
+            int[] result = MergeSortedArray.SolveProblem(nums1, m, nums2, n);
+            Console.WriteLine($"[{string.Join(", ", result)}]");
         }
     }
 }
