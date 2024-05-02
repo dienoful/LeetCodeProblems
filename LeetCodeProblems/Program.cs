@@ -7,13 +7,12 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            int[] nums1 = { 1, 2, 3, 0, 0, 0 };
-            int[] nums2 = { 2, 5, 6 };
-            int m = 3;
-            int n = 3;
+            int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
+            int val = 2;
 
-            int[] result = MergeSortedArray.SolveProblem(nums1, m, nums2, n);
-            Console.WriteLine($"[{string.Join(", ", result)}]");
+            int result = RemoveElement.SolveProblem(nums, val);
+            Console.WriteLine(result);
+            //Console.WriteLine($"[{string.Join(", ", result)}]");
         }
     }
 }
