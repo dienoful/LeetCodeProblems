@@ -7,11 +7,10 @@ namespace LeetCodeProblems
     {
         static void Main(string[] args)
         {
-            int[] nums = { 0, 1, 2, 2, 3, 0, 4, 2 };
-            int val = 2;
+            int num = new Random().Next(9999);
 
-            int result = RemoveElement.SolveProblem(nums, val);
-            Console.WriteLine(result);
+            string result = IntegerToRoman.SolveProblem(num);
+            Console.WriteLine($"{num} => {result}");
             //Console.WriteLine($"[{string.Join(", ", result)}]");
         }
     }
