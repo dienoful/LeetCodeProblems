@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LeetCodeProblems.Problems.Medium
 {
+    /*
+     * Given an integer, convert it to a Roman numeral.
+     */
     internal class IntegerToRoman
     {
-        /*
-         * Given an integer, convert it to a Roman numeral.
-         */
         public static string SolveProblem(int num)
         {
             Dictionary<int, string> dict = new Dictionary<int, string>
